@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry - Plus One & VHSE Free Materials</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0; /* Place navbar at the top */
+      z-index: 999;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1e90ff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 120px auto 0; /* Adjusted margin-top to create space between navbar and content */
+      padding: 20px;
+      text-align: center;
+      opacity: 0; /* Set initial opacity to 0 for fade animation */
+      animation: fadeIn 1s ease forwards; /* Apply fade-in animation */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #1e90ff; /* Blue theme */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 20px;
+      transition: background-color 0.3s ease;
+      margin: 10px; /* Add margin to create gap between buttons */
+    }
+
+    .button:hover {
+      background-color: #007bff; /* Darker blue on hover */
+    }
+
+    .section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .about {
+      margin-top: 50px;
+      text-align: left;
+    }
+
+    .about h2 {
+      font-size: 36px;
+      color: #1e90ff; /* Blue theme */
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .faculty {
+      margin-top: 50px;
+      text-align: left;
+    }
+
+    .faculty h2 {
+      font-size: 36px;
+      color: #1e90ff; /* Blue theme */
+      margin-bottom: 20px;
+    }
+
+    .faculty ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .faculty li {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .faculty li .profile-icon {
+      width: 50px;
+      height: 50px;
+      background-color: #fff; /* Profile icon background color */
+      border-radius: 50%; /* Make it round */
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .faculty li .profile-icon i {
+      color: #1e90ff; /* Blue theme */
+      font-size: 24px;
+    }
+
+    .facilities {
+      margin-top: 50px;
+      text-align: left;
+    }
+
+    .facilities h2 {
+      font-size: 36px;
+      color: #1e90ff; /* Blue theme */
+      margin-bottom: 20px;
+    }
+
+    .facilities ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .facilities li {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <div class="container">
+    <h1>Chemistry</h1>
+    <div class="about">
+      <h2>About Chemistry</h2>
+      <p>
+        Chemistry is the scientific study of matter, its properties, composition, and interactions with other substances. It is a fundamental discipline that plays a crucial role in various fields such as medicine, agriculture, industry, and environmental science. This section provides study materials and previous year question papers to help you excel in your chemistry studies.
+      </p>
+    </div>
+    <div class="material">
+      <h2>Study Material</h2>
+      <a href="nodoc.html" class="button" target="_blank">Study Material 1</a> <!-- Add link to study material PDF -->
+      <a href="nodoc.html" class="button" target="_blank">Study Material 2</a> <!-- Add link to another study material PDF -->
+    </div>
+    <div class="previous-papers">
+      <h2>Previous Year Question Papers</h2>
+      <a href="pdf\Chemistry Match 2024 Annual Exam Question Paper Plus One.pdf" class="button" target="_blank">March 2024</a> <!-- Add link to previous year question paper PDF -->
+      <a href="nodoc.html" class="button" target="_blank">Question Paper 2</a> <!-- Add link to another question paper PDF -->
+    </div>
+    <div class="other-content">
+      <h2>Additional Content</h2>
+      <p>Explore additional resources such as online courses, video tutorials, and interactive quizzes to enhance your chemistry skills.</p>
+    </div>
+    <div class="faculty">
+      <h2>Faculty</h2>
+      <ul>
+        <li>
+          <div class="profile-icon"><i class="fas fa-user"></i></div>
+          Jiji K P - Chemistry
+        </li>
+      </ul>
+    </div>
+    <div class="facilities">
+      <h2>Facilities</h2>
+      <ul>
+        <li>Chemistry Laboratory</li>
+        <li>Library</li>
+        <li>Research Facilities</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

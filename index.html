@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plus One & VHSE Free Materials</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to styles.css -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-2Ua/rh2doFzrQwnnW4DsGTg3RQwUalOlJh0UrrhAV8ClOm5YERbN9N2A0dR+ZmZzksiyKce1uwfqeFAz3zEfWg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Additional styling to fix the position of the heading */
+    h1 {
+      margin-top: 100px; /* Adjusted margin-top to create space below the navbar */
+    }
+    footer {
+  text-align: center;
+  padding: 20px 0; /* Add some padding for better spacing */
+    }
+
+    footer p {
+  margin: 0; /* Remove default margin for the paragraph */
+    }
+
+    /* Styling for the navbar */
+    nav {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0; /* Positioning the navbar at the topmost point */
+      z-index: 999;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c70000;
+    }
+
+    /* Styling for the news section */
+    #news {
+      overflow-x: scroll;
+      white-space: nowrap;
+      padding: 20px;
+      background-color: #000; /* Changed to black */
+      margin-top: 20px;
+      color: #fff; /* Changed to white */
+    }
+
+    .news-item {
+      display: inline-block;
+      padding: 20px;
+      margin-right: 20px;
+      background-color: #c70000; /* Changed to red */
+      color: #fff; /* Changed to white */
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px; /* Adjust the width as needed */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .news-item h3 {
+      margin-top: 0;
+    }
+
+    .arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff; /* Changed to white */
+      font-size: 24px;
+    }
+
+    .left-arrow {
+      left: 10px;
+    }
+
+    .right-arrow {
+      right: 10px;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #c70000; /* Changed to red */
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 80%;
+      max-height: 80%;
+      overflow-y: auto;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+    }
+
+    .popup-content {
+      color: #fff; /* Changed to white */
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      color: #fff; /* Changed to white */
+    }
+
+    .popup-close:hover {
+      color: #c70000; /* Hover color */
+    }
+
+    /* Menu button for mobile */
+    .menu-button {
+      display: none; /* Hidden by default */
+    }
+
+    /* Media query for mobile */
+    @media only screen and (max-width: 600px) {
+      nav {
+        display: none; /* Hide navigation bar on mobile */
+      }
+
+      .container h2 i {
+        color: #c70000; /* Red color for icons */
+        font-size: 48px; /* Larger font size */
+        margin-bottom: 10px; /* Add space below icons */
+        display: block; /* Center icons */
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .menu-button {
+        display: block; /* Show menu button */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#maths"><i class="fas fa-calculator"></i> Maths</a>
+    <a href="#chemistry"><i class="fas fa-flask"></i> Chemistry</a>
+    <a href="#english"><i class="fas fa-book"></i> English</a>
+    <a href="#entrepreneurship"><i class="fas fa-lightbulb"></i> ED</a>
+    <a href="#jsd"><i class="fas fa-laptop-code"></i> JSD</a>
+    <a href="#physics"><i class="fas fa-atom"></i> Physics</a>
+    <div class="menu-button">&#9776;</div> <!-- Menu button for mobile -->
+  </nav>
+
+  <div class="container">
+    <h1 class="animation">Plus One VHSE Free Materials</h1>
+    <p class="animation">Welcome to our website providing free PDF and documents of previous exam question papers for Plus One and VHSE students. Explore materials for various subjects below.</p>
+    <a href="#maths" class="button animation">Explore Subjects</a>
+  </div>
+
+  <div class="overlay">
+    <div class="modal animation">
+      <p>Check out our latest collection of exam question papers for Maths:</p>
+      <p> - Previous year question papers</p>
+      <p> - Solutions and answer keys</p>
+      <button onclick="closeModal()" class="button">Close</button>
+    </div>
+  </div>
+
+  <section id="maths" class="section animation">
+    <h2>Maths <i class="fas fa-calculator"></i></h2>
+    <p>Find previous exam question papers, solutions, and study materials for Maths.</p>
+    <a href="maths.html" class="button">Open</a> <!-- Link to Maths page -->
+  </section>
+
+  <section id="chemistry" class="section animation">
+    <h2>Chemistry <i class="fas fa-flask"></i></h2>
+    <p>Access free PDFs and documents of Chemistry exam question papers and study resources.</p>
+    <a href="chemistry.html" class="button">Open</a> <!-- Link to Chemistry page -->
+  </section>
+
+  <section id="english" class="section animation">
+    <h2>English <i class="fas fa-book"></i></h2>
+    <p>Get previous exam question papers and study guides for English subject.</p>
+    <a href="english.html" class="button">Open</a> <!-- Link to English page -->
+  </section>
+
+  <section id="entrepreneurship" class="section animation">
+    <h2>Entrepreneurship Development <i class="fas fa-lightbulb"></i></h2>
+    <p>Explore materials related to Entrepreneurship Development for Plus One and VHSE.</p>
+    <a href="ed.html" class="button">Open</a> <!-- Link to Entrepreneurship Development page -->
+  </section>
+
+  <section id="jsd" class="section animation">
+    <h2>Junior Software Developer (JSD) <i class="fas fa-laptop-code"></i></h2>
+    <p>Find resources and question papers for Junior Software Developer course.</p>
+    <a href="jsd.html" class="button">Open</a> <!-- Link to JSD page -->
+  </section>
+
+  <section id="physics" class="section animation">
+    <h2>Physics <i class="fas fa-atom"></i></h2>
+    <p>Access previous exam papers and study materials for Physics subject.</p>
+    <a href="physics.html" class="button">Open</a> <!-- Link to Physics page -->
+  </section>
+
+  <section id="news" class="section animation">
+    <h2>News <i class="fas fa-newspaper"></i></h2>
+    <div class="news-container">
+      <div class="news-item">
+        <h3>Admission Started for LKG to 10th</h3>
+        <p>Admission process has commenced for classes LKG to 10th. Grab your seats now!</p>
+      </div>
+      <div class="news-item">
+        <h3>School Reopens in June 2024</h3>
+        <p>Schools are set to reopen in June 2024 for classes 1-9 and 12. Please note, classes 10 and 11 are exempted.</p>
+      </div>
+      <div class="news-item">
+        <h3>New Study Materials Incoming</h3>
+        <p>New study materials for various subjects are incoming to help students prepare for upcoming exams.</p>
+      </div>
+      <div class="news-item">
+        <h3>Evaluation Policy Update</h3>
+        <p>Educational department of Kerala considers making evaluation more liberal due to tough Maths and Physics exams.</p>
+      </div>
+    </div>
+    <div class="arrow left-arrow">&lt;</div>
+    <div class="arrow right-arrow">&gt;</div>
+    <div class="popup"></div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Smooth scrolling animation
+    $(document).ready(function() {
+      $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+      });
+    });
+
+    // Show container and sections after page load
+    $(window).on('load', function() {
+      $('.container').fadeIn(1000);
+      $('.section').fadeIn(1000);
+    });
+
+    // News section navigation
+    $(document).ready(function() {
+      var $newsContainer = $('.news-container');
+      var $newsItems = $('.news-item');
+      var currentIndex = 0;
+
+      $('.right-arrow').click(function() {
+        if (currentIndex < $newsItems.length - 1) {
+          currentIndex++;
+          var newPosition = -($newsItems.eq(currentIndex).position().left - $newsContainer.position().left);
+          $newsContainer.animate({ scrollLeft: newPosition }, 500);
+        }
+      });
+
+      $('.left-arrow').click(function() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          var newPosition = -($newsItems.eq(currentIndex).position().left - $newsContainer.position().left);
+          $newsContainer.animate({ scrollLeft: newPosition }, 500);
+        }
+      });
+
+      // Enlarge news item when clicked
+      $newsItems.click(function() {
+        var $popup = $('.popup');
+        var $content = $(this).html();
+        $popup.html($content).fadeIn();
+        $(document).on('click', function(e) {
+          if (!$(e.target).closest('.popup').length && !$(e.target).closest('.news-item').length) {
+            $popup.fadeOut();
+          }
+        });
+      });
+    });
+
+    // Toggle menu on mobile
+    $(document).ready(function() {
+      $('.menu-button').click(function() {
+        $('nav a').slideToggle();
+      });
+    });
+  </script>
+</body>
+<footer>
+    <p>Made by Agnel Francis Olakkengil</p>
+  </footer>
+  
+</html>
